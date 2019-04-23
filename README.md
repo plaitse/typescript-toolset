@@ -208,3 +208,7 @@ console.log(Circumference.calculateCircumference(3));
 ```
 
 And compile the file this way: `tsc filename.ts --outFile filename.js`
+
+## React workflow
+
+`npx create-react-app my-app --typescript`
