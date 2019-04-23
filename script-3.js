@@ -1,5 +1,5 @@
 "use strict";
-/* --- Namespace --- */
+/* --- Namespaces --- */
 /// <reference path="math/circumference.ts" />
 /// <reference path="math/surface.ts" />
 console.log(Circumference.calculateCircumference(3));

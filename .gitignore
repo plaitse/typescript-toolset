@@ -70,3 +70,10 @@ typings/
 
 # MacOS
 .DS_Store
+
+# Specific
+script-1.js
+script-2.js
+script-3.js
+script-4.js
+script-5.js

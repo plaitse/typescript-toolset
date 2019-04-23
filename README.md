@@ -9,20 +9,26 @@ TypeScript is a wrapper language that can only be run in the development mode, n
 ## Commands
 
 One shot:
+
 - `tsc file.js`: compiles the TS file into JS
 
 Complete project:
+
 - `tsc --init`: creates a config file to compile every TS files into JS ones
 - `tsc`: compiles every TS files found into JS ones
 
 Specific case:
+
 - `tsc script-3.ts --outFile script-3.js`: compiles the file that contains namespaces (see section Namespace)
 
 ## Config
 
 In tsconfig.json:
+
 - The option `"noEmitOnError": true` will prevent .ts files to be compiled in .js if there's any error.
 - The option `"sourceMap": true` will allow us to debug TypeScript code in the browser's developer tools.
+
+If tsconfig.json is placed somewhere else than the root directory: `tsc -p DIR_NAME/tsconfig.json`.
 
 See complete options: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
@@ -79,7 +85,7 @@ function multiply(value1: number, value2: number): number {
 ```js
 // Union types
 let myRealAge: number | string | null = 99;
-myRealAge = "99"
+myRealAge = "99";
 ```
 
 ```js
@@ -91,7 +97,7 @@ console.log(myMultiply(5, 2)); // 10
 
 ```js
 // Object types
-let userData: { name: string, age: number} = {
+let userData: { name: string, age: number } = {
   name: "Santiago",
   age: 69
 };
@@ -187,7 +193,7 @@ Namespaces prevents poluting the global scope.
 ```js
 namespace Circumference {
    const PI = 3.14;
-   export const calculateCircumference = (diameter: number): number => diameter * PI; 
+   export const calculateCircumference = (diameter: number): number => diameter * PI;
 }
 console.log(Circumference.calculateCircumference(3));
 ```

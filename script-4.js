@@ -1,5 +1,5 @@
 "use strict";
-/* --- Interface --- */
+/* --- Interfaces --- */
 var Person = /** @class */ (function () {
     function Person(firstName) {
         var _this = this;
